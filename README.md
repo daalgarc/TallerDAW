@@ -1,2 +1,0 @@
-# TallerDAW
-taller
