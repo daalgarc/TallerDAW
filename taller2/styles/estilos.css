@@ -76,3 +76,6 @@ p#rusia, p#iran{
   color: orange;
   text-decoration: underline;
 }
+#cabecera{
+  background-image: url("../imgs/fwc_darkbluebg.png");
+}
