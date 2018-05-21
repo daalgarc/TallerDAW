@@ -55,3 +55,24 @@ table.blueTable tfoot .links a{
   padding: 2px 8px;
   border-radius: 5px;
 }
+.titulo{
+  text-align: center;
+  text-decoration: underline;
+}
+p{
+  text-align: right;
+  color: blue;
+  /*font-family: fantasy;*/
+}
+*{
+  font-family: verdana;
+}
+p#rusia, p#iran{
+  border:1px dotted black;
+}
+
+.bombo{
+  font-weight: bold;
+  color: orange;
+  text-decoration: underline;
+}
