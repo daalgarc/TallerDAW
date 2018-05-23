@@ -1,0 +1,13 @@
+*{
+	text-align: center;
+}
+.card{
+	float: left;
+	width: 20%;
+	margin: 0.1%;
+	padding: 1%;
+	
+}
+img{
+	display: none;
+}
