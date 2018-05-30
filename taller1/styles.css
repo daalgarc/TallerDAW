@@ -1,6 +1,5 @@
 *{
-	box-sizing: border-box;
-	margin: 10px;
+	
 
 }
 .col-1 {width: 8.33%;}
@@ -20,43 +19,142 @@
 	padding-top: 20px;
 	text-align: center;
 	height: 50px;
-	width: 100px;
-	margin:0;
+	min-width: 350px;
+	
+	color:white;
 	border: solid 2px black;
 	float: left;
-	width: 200px;
+	
 	list-style: none;
+	background-color:rgb(26, 26, 255);
+	
+}
+
+.left:hover{
+	background-color:#6666ff;
+}
+
+
+.left:visited{
+	background-color: blue;
 }
 /*
 li{
 	float: left;
 }
 */
+table tr:nth-child(even) {
+    background-color: black;
+    color:white;
+}
+ 
+table tr:nth-child(odd) {
+    background-color: white;
+}
+a{
+	text-decoration: none;
+}
+header{
+	background-image: url("images/fondo.jpg");
+	font-size: 30pt;
+	color: white;
+}
 aside{
 	align-content: center;
 	border: solid 2px black;
 	float: left;
+	margin:10px;
 	
 }
 section{
 	border: solid 2px black;
 	float: left;
+	margin:10px;
+	padding:10px;
 	
 }
 
 nav{
-
+    
 	float:left;
-	border: solid 2px black;
+	min-width: 100%;
+	
+	
+}
 
+.imgPie{
+	float:left;
+	width:70px;
+	height: 70px;
+	margin:5px;
 }
 
 footer{
+	border: solid 2px black;
 	float:left;
+	text-align: justify;
+	margin:10px;
+	min-width: 100%;
 }
 .uls{
-	margin-left: 16%;
+	min-width:100%;
 }
 .center{
 	text-align: center;
+}
+#footer{
+	
+	float:left;
+	width:83.33%;
+}
+
+.icono{
+	margin:5px;
+	float:left;
+	width:70px;
+	height: 70px;
+}
+
+.icono:hover{
+	opacity:0.5;
+}
+
+#sri{ 
+	display: none; 
+}
+#caja>h2+ul>li:nth-child(1):hover #sri{ 
+	display: block; 
+}
+#movil {
+	display: none;
+}
+
+#caja>h2+ul>li:nth-child(2):hover #movil {
+	display: block;
+}
+
+#fija {
+	display: none;
+}
+
+#caja>h2+ul>li:nth-child(3):hover #fija{
+	display: block;
+}
+
+#cable {
+	display: none;
+}
+
+#caja>h2+ul>li:nth-child(4):hover #cable{
+	display: block;
+
+}
+
+
+#pensiones {
+	display: none;
+}
+
+#caja>h2+ul>li:nth-child(5):hover #pensiones {
+	display: block;
 }
