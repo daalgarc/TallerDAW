@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Quienes Somos</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<meta charset="UTF-8">
+
+</head>
+
+<body>
+<div class="container-fluid">
+	<header class="cabecera"><h1>Todos Mis Servicios</h1>
+		<p>Principal Servicios <b>Usuarios</b> Nosotros</p>
+	</header>
+
+	
+	<section>
+		<div class="imagen"></div>
+		<div class="usuarios">
+			<div class="titulo"><h2>Usuarios</h2></div>
+			<div class="cajitas">
+			
+		<div class="input-group"> <span class="input-group-addon">Filtrado</span>
+   			 <input id="entradafilter" type="text" class="form-control">
+		</div>
+		<div class="col-md-12">
+				<div class="table-responsive">
+				<table class="table-hover">
+				<thead>
+					<tr>
+					    <th>Nombre</th>
+					    <th>Servicio</th> 
+					    <th>Ciudad</th>
+					    <th>Fecha</th> 
+					    <th>Total Factura</th>
+  					</tr>
+  					</thead>
+  					
+  					<tbody class="contenidoBusqueda">
+  					<tr th:each="user : ${users}">
+  						<th th:text="${user.nombre}"></th>
+  						<th th:text="${user.servicio}"></th>
+  						<th th:text="${user.ciudad}"></th>
+  						<th th:text="${user.fecha}"></th>
+  						<th th:text="${user.totalFactura}"></th>
+  					
+  					</tr>
+  					
+  					
+  					</tbody>
+  					
+  				
+  					
+				
+				
+				</table>
+				</div>
+		</div>		
+			
+
+			</div>
+
+		</div>
+	</section>
+	
+	<footer>
+		<p>Todos los derechos reservados © 2018</p>
+	</footer>
+	</div>
+	<script>
+	
+	$(document).ready(function () {
+		   $('#entradafilter').keyup(function () {
+			   console.log("aqui");
+		      var rex = new RegExp($(this).val(), 'i');
+		        $('.contenidoBusqueda tr').hide();
+		        console.log($('.contenidoBusqueda tr').val());
+		        $('.contenidoBusqueda tr').filter(function () {
+		            return rex.test($(this).text());
+		        }).show();
+
+		        })
+
+		});
+		
+		
+	
+	</script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
